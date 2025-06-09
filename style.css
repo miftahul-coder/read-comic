@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #ff0000);
+    color: white;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+.book-card {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.book-card:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+button {
+    background: #ff0033;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #ff6666;
+}
+
+section {
+    padding: 2rem;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    color: #ffd700;
+}
+
+#preview {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    overflow-y: auto;
+    border-radius: 10px;
+    z-index: 100;
+    color: white;
+}
+
+#preview-content {
+    margin-bottom: 1rem;
+}

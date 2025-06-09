@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Website Baca Buku</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>Website Baca Buku</h1>
+        <nav>
+            <a href="#catalog">Katalog Buku</a>
+            <a href="#preview">Preview Buku</a>
+            <a href="#login">Login</a>
+            <a href="#daftar-baca">Daftar Baca</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+
+    <section id="catalog">
+        <h2>Katalog Buku</h2>
+        <div class="book-card" data-id="1" tabindex="0">
+            <h3>Judul Buku Satu</h3>
+            <p>Penulis: Penulis Satu</p>
+            <button class="btn-preview" data-id="1">Preview Buku</button>
+        </div>
+        <div class="book-card" data-id="2" tabindex="0">
+            <h3>Judul Buku Dua</h3>
+            <p>Penulis: Penulis Dua</p>
+            <button class="btn-preview" data-id="2">Preview Buku</button>
+        </div>
+    </section>
+
+    <section id="preview" hidden>
+        <h2>Preview Buku</h2>
+        <div id="preview-content"></div>
+        <button id="close-preview">Tutup Preview</button>
+    </section>
+
+    <section id="login" hidden>
+        <h2>Login</h2>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required />
+            <label for="password">Password:</label>
+            <input type="password" id="password" required />
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <section id="daftar-baca" hidden>
+        <h2>Daftar Baca</h2>
+        <div>
+            <h3>Sudah Dibaca</h3>
+            <ul id="list-read"></ul>
+        </div>
+        <div>
+            <h3>Ingin Dibaca</h3>
+            <ul id="list-want"></ul>
+        </div>
+    </section>
+
+    <section id="kontak">
+        <h2>Kontak Kami</h2>
+        <form id="contact-form">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="pesan">Pesan:</label>
+            <textarea id="pesan" name="pesan" required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Website Baca Buku</p>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a> |
+            <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a> |
+            <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
