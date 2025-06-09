@@ -1,0 +1,16 @@
+{
+  "name": "Read Comic",
+  "short_name": "ReadComic",
+  "description": "Website baca buku komik digital yang interaktif dan estetik.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0d0d1f",
+  "theme_color": "#ff0055",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    }
+  ]
+}
